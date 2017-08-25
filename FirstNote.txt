@@ -1,0 +1,39 @@
+Einführung
+	Motivation
+	(von Fachfremden verständlich)
+		Von Ososoft vorgeschlagen
+		Vereinfachung des Bestellprozesses
+		
+		
+		Sprachasistenten und wie sie funktionieren (auf simpler ebene)
+		annäherung an mein problem erstellen
+	
+	Zielstellimg
+		ososoft macht blabla und hat dabei blabla
+		problem erfassen
+			SAP einarbeitung ist shitty, einfacher wäre nice´
+		Problem konkrett zusammenfassen
+		Erwartung für diese arbeit erstellen
+			-interviews
+			-nutzeranalysen
+			-vorgehen (alexa usw?)
+			architektur? bereits eine grobe architektur auffassen?!?
+		
+	Aufbau der Arbeit
+	
+Grundlagen
+
+	
+	
+Problembeschreibung
+
+	
+	
+Lösungsbeschreibung
+
+	
+	
+Evaluierung
+
+	
+	
