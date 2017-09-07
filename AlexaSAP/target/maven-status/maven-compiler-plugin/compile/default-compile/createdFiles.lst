@@ -1,0 +1,12 @@
+de\ososoft\sapecho\container\Slots.class
+de\ososoft\sapecho\logic\IntentHandler.class
+de\ososoft\sapecho\container\MaterialInformation.class
+de\ososoft\sapecho\utils\connection\SAPConnector.class
+de\ososoft\sapecho\utils\response\ResponseMaker.class
+de\ososoft\sapecho\container\Bestellanforderung$BestellanforderungBuilder.class
+de\ososoft\sapecho\container\Intents.class
+testpackage\TestMain.class
+de\ososoft\sapecho\container\Bestellanforderung$1.class
+de\ososoft\sapecho\logic\SAPSpeechlet.class
+de\ososoft\sapecho\container\Bestellanforderung.class
+de\ososoft\sapecho\main\SAPSpeechletRequestStreamHandler.class
