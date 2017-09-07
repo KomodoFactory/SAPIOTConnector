@@ -1,3 +1,6 @@
+#################
+###Tex Ignores###
+#################
 *.aux
 *.lof
 *.log
@@ -44,3 +47,21 @@
 *.mtc0
 *.pyg
 *.nlo
+
+
+#################
+##Maven Ignores##
+#################
+AlexaSAP/target/
+AlexaSAP/pom.xml.tag
+AlexaSAP/pom.xml.releaseBackup
+AlexaSAP/pom.xml.versionsBackup
+AlexaSAP/pom.xml.next
+AlexaSAP/release.properties
+AlexaSAP/dependency-reduced-pom.xml
+AlexaSAP/buildNumber.properties
+AlexaSAP/.mvn/timing.properties
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!AlexaSAP/.mvn/wrapper/maven-wrapper.jar
+
