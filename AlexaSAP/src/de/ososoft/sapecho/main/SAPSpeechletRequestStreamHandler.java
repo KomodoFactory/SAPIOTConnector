@@ -5,12 +5,9 @@ import java.util.Set;
 
 import com.amazon.speech.speechlet.lambda.SpeechletRequestStreamHandler;
 
-import de.ososoft.sapecho.logic.SAPSpeechlet;
-
 /**
  * This class is the Main Handler for an AWS Lambda function powering an Alexa
- * Skill. Set the handler field in the AWS Lambda console to the corresponding
- * Class.
+ * Skill.
  */
 public final class SAPSpeechletRequestStreamHandler extends SpeechletRequestStreamHandler {
 	private static final Set<String> supportedApplicationIds = new HashSet<>();

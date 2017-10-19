@@ -1,0 +1,29 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },  
+    {
+      "intent": "LinkIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Artikel",
+          "type": "Artikel"
+        },
+        {
+          "name": "zahl",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "Wiederhohle"
+    }
+  ]
+}

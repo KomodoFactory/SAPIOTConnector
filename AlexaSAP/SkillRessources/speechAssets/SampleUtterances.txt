@@ -1,0 +1,34 @@
+AMAZON.CancelIntent Abbrechen
+AMAZON.CancelIntent Cancel
+AMAZON.HelpIntent Hilfe
+AMAZON.HelpIntent Hilf mir
+AMAZON.HelpIntent Hilf mir bitte
+AMAZON.HelpIntent Wie bestelle ich
+AMAZON.HelpIntent Was kann ich tun
+AMAZON.HelpIntent Alexa Hilfe
+AMAZON.StopIntent Stop
+AMAZON.StopIntent Alexa Stop
+AMAZON.StopIntent Halt
+AMAZON.StopIntent Aufhören
+SAPValidateIntent erreichst du s a p
+SAPValidateIntent teste die S A P verbindung
+SAPValidateIntent probiere deine verbindung aus
+SAPOrderStartIntent Bestelle bitte {Artikel}
+SAPOrderStartIntent bestelle {Artikel}
+SAPOrderStartIntent bestell {Artikel}
+SAPOrderStartIntent Hau {Artikel} raus
+SAPOrderStartIntent Hau {Artikel} rein
+SAPOrderStartIntent Hau ne bestellung für {Artikel} raus
+SAPOrderStartIntent bestell mal {Artikel}
+FillingFieldsIntent bitte bestelle {Quantity}
+FillingFieldsIntent bitte bestelle {Quantity} einheiten
+FillingFieldsIntent bitte bestelle {Quantity} stück
+FillingFieldsIntent bitte bestelle {Quantity} davon
+FillingFieldsIntent bitte bestelle {Quantity}
+FillingFieldsIntent Ich will {Quantity} bestellen
+FillingFieldsIntent Ich will {Quantity}
+FillingFieldsIntent {Quantity}
+RepeatArticleIntent ändere die Bestellung zu {Artikel}
+RepeatArticleIntent ich meinte {Artikel}
+RepeatArticleIntent bestelle {Artikel}
+RepeatArticleIntent {Artikel}
