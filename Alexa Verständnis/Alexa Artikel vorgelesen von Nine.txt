@@ -1,0 +1,40 @@
+(hub nicht als hup)
+(mm als MM vorgelesen, nicht milimeter)
+(RAL als ral und als R A L)
+
+sensation ESD halbschuh S zwei
+Scott ESD sandale S eins
+GX drei hundert fünfzig damensandale S eins
+GX hundert dreizig damenschuh S eins
+luftfilter
+luftfilter
+filterkerze
+filterbeutel
+filtermatte
+farbnebelabscheider
+domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm
+domiline schlittenfuehrung fünfzig hub fünfzig mm
+domiline schlittenfuehrung fünfzig hub fünf und siebzig mm
+domiline schlittenfuehrung fünfzig hub hundert mm
+domiline schlittenfuehrung achtzig hub fünf und zwanzig mm
+domiline schlittenfuehrung achtzig hub fünfzig mm
+domiline schlittenfuehrung achtzig hub fünf und siebzig mm
+(null)
+domiline schlittenfuehrung achtzig hub hundert mm
+domiline schlittenfuehrung hundert zwanzig hub fünf und zwanzig mm
+domiline schlittenfuehrung hundert zwanzig hub fünfzig mm
+domiline schlittenfuehrung hundert zwanzig hub fünf und siebzig mm
+domiline schlittenfuehrung hundert zwanzig hub hundert mm
+
+rammschutzplanken BLS abm ein hundert mal ein tausend mm RAL
+rammschutzplanken BLS abm ein hundert mal ein tausend ein hundert mm RAL
+raul rammschutz blind BRSAWM hundert mal ein tausend zwei hundert ML
+rammschutzplanken BLS abm hundert mal ein tausend drei hundert mm RAL
+rammschutzplanken BLS abm hundert mal ein tausend sechs hundert mm RAL
+rammschutzplanken BLS abm hundert mal ein tausend sieben hundert mm RAL
+rammschutzplanken BLS abm hundert mal ein tausend acht hundert mm RAL
+rammschutzplanken BLS abm hundert mal ein tausend neun hundert mm RAL
+
+rammschutzplanken BLS abm hundert mal zwei tausend mm RAL
+rammschutzplanken BLS abm hundert mal acht hundert mm RAL
+rammschutzplanken BLS abm hundert mal neun hundert mm RAL

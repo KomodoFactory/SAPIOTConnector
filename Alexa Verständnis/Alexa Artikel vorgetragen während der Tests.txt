@@ -1,0 +1,136 @@
+
+Scott ESD sandale S eins:
+	
+	gott ESDF eins
+	gott ESDS eins
+	gott ESDR eins
+	gott ESGR
+	Scott ESDS eins
+	Scott ESDS eins
+	gott ESDF eins
+	Sandale (nur Sandale gesagt)
+------
+	sandale
+	Scott ist DS eins
+	Scott ESDS eins
+	(null)
+------
+	(null)
+	sandale
+	sandale siciples gott ESDS eins
+	Scott ESPS eins
+	(null)
+	Scott ESDS eins
+	sandale
+------
+	Scott ESD sandale S eins
+------
+	sandalen Scott ESDS eins
+	(kein intent)
+	sandalen Scott ESDS eins
+	Scott ESDS eins
+	statt ESDS eins
+	Scott ESDS eins
+	Scott S eins
+	(kein intent)
+	(kein intent)
+	S eins (partieller Name genannt)
+-------
+	Scott ESTS eins
+	Scott ESDS eins
+	Scott ESDS eins
+	(kein intent)
+	(null)
+	Scott ESTS eins
+	Scott ESD (alexa hat nich tmerh zugehört)
+-------
+	sandalen des types Scott ESTS eins
+	sandalen Scott ESDS eins
+	sandalen (nur so weit gesprochen)
+	Scott ESTS eins
+	sandalen des typs Scott EACDES eins
+	sandalen (hat nicht weiter zugehört)
+--------
+(Frau mit sehr starken Akzent) (ob es das schaffst ist ne andere frage...)
+	(null)
+	filterbeutel
+	sandale
+--------
+	sandale (hat den rest nicht gehört)
+	gott ESTS eins
+	(null)
+	ESTS eins
+	scout ESDS eins
+	die ST (ESD)
+	BSDS eins (ESD S1)
+	start die SDS eins
+	Scott ESD (Scott ESD)
+--------
+	sandalen bist hübs gott ESDS eins
+	Scott ESTS
+	wie ist die S eins
+	sandalen von Scott ESGS eins
+	statt es SDS eins
+	gerne SCOTTESDS (buchstabiert)
+	Scott ESGS
+	sandal vom typ Scott ESDS eins
+	sandale
+	sandale (den rest hat sie nicht gehört)
+--------
+	sandale (hat den rest nicht gehört)
+	
+	
+	
+	
+	
+	
+DomiLine Schlittenfuehrung 50 Hub 25 mm:
+
+	domiline schlittenfuehrung
+	domiline schlittenfuehrung
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm
+	domiLINE Schlittenfuehrung fünfzig Hub fünf und zwanzig mm
+	(null)
+-------   
+	domiline schlittenfuehrung (nur so weit gesagt. tester fand das alexa eh nicht mehr zuhört)
+-------
+	domiline schlittenfuehrung (nur so weit gesagt)
+	domiline schlittenfuerhung (nur so weit gesagt)
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm (mm gesprochen als langes M)
+-------
+	domiline schlittenfuehrung (nur so weit gesagt)
+	domi line schltten führung MIT dem mars fünfzig hub fünf und zwanzig millimeter
+	fünfzig hub
+-------
+	domiline schlittenfuehrung
+	domiline schlittenfuehrung 50 hub 25 mm (mm gesprochen als langes M)
+-------
+	FM (Alexa scheint den gesamten rest ignoriert zu haben)
+	fünfzig hub
+	fünfzig hub
+	
+	domiline einen
+	schlittenfuehrung (nur so weit gesagt)
+	schlittenfuehrung (nur so weit gesagt)
+	schlittenfuehrung (nur so weit gesagt)
+	schlittenfuehrung (nur so weit gesagt)
+	schlittenfuehrung (nur so weit gesagt)
+	schlittenfuehrung (nur so weit gesagt)
+-------
+	domiline schilttenfuehrung (nur so weit gesagt)
+	domiline schlittenfuehrung (nur so weit gesagt)
+	fünfzug hub fünf und zwanzig mm (domiline schlittenfuehrung wurde von alexa ignoriert)
+-------
+(Frau mit sehr starken Akzent) (ob es das schaffst ist ne andere frage: akzent zeigt sich durch kurze pausen zwischen worten. das hat es wahrscheinlcih alexa einfach gemacht es zu verstehen.)
+	domiline schlittenfuehrung (für abmase hat es nicht gewartet, zufällig aber die richtige gewählt)
+-------
+	domiline schlittenfuehrung (es wurde direkt richtig geraten)
+	(kein intent)
+	domiline schlittenfuehrung
+	domline schlittenfuehrung fünfzig hub fünf und zwanzig mm (gesagt als ... mit abmahßen ... mm als M M ausgesprochen)
+-------
+	(kein intent. hat versucht zu fragen ob es ds zu bestellen gibt)
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm
+-------
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm
