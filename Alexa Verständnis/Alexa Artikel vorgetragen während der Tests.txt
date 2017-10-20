@@ -78,7 +78,12 @@ Scott ESD sandale S eins:
 	sandale (den rest hat sie nicht gehört)
 --------
 	sandale (hat den rest nicht gehört)
-	
+--------
+	(kein intent)
+	(kein intent)
+	Scott ESD sandale S eins (gesagt: Scott ESD S1 Sandale)
+--------
+	sandalen
 	
 	
 	
@@ -134,3 +139,16 @@ DomiLine Schlittenfuehrung 50 Hub 25 mm:
 	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm
 -------
 	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm
+-------
+	domiline schlittenfuehrung (nur bis dahin gesagt)
+	(kein intent)
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm einen
+	domiline schlittenfuehrung (nur so weit gesagt)
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig mm (mm als M M ausgesprochen, keine abm vorgekommen)
+--------
+	domiline schlittenfuehrung (nur so weit gesagt)
+	domiline schlittenfuehrung (nur so weit gesagt)
+	(kein intent)
+	domiline schlittenfuehrung (nur so weit gesagt)
+	domiline schlittenfuehrung (nur so weit mitbekommen (zu lange pause))
+	domiline schlittenfuehrung fünfzig hub fünf und zwanzig  mm (mm ausgesprochen als mh)
