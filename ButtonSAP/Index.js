@@ -1,8 +1,8 @@
 'use strict';
 var http = require('http');
 
-const jsonStart =  "{\"preq_item\":\"1\",\"quantity\":\"";
-const jsonMiddle = "\",\"unit\":\"L\",\"doc_type\":\"NB\",\"material\":\"100-806\",\"plant\":\"1000\",\"deliv_date\":\"";
+const jsonStart =  "{\"doc_type\":\"NB\",\"preq_item\":\"1\",\"quantity\":\"";
+const jsonMiddle = "\",\"unit\":\"L\",\"material\":\"100-806\",\"plant\":\"1000\",\"deliv_date\":\"";
 const jsonEnd = "\"}";
 
 const hostAddress = 'saped1.bemaso.com';
