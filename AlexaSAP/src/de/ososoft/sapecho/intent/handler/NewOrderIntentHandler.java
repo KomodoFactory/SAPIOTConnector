@@ -33,7 +33,7 @@ public class NewOrderIntentHandler extends IntentHandler {
 		conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_DEFAULT);
 		conversationInformation.setFilledFields(SessionAttributeName.FILLED_FIELDS_DEFAULT);
 		String speechText = "Ich habe ihnen gerne geholfen.";
-		return ResponseMaker.createResponse(speechText);
+		return ResponseMaker.createTellResponse(speechText);
 	}
 
 	private SpeechletResponse getPositivConfirmationResponse(final ConversationInformation conversationInformation) {
@@ -54,7 +54,7 @@ public class NewOrderIntentHandler extends IntentHandler {
 		conversationInformation.setSessionArticle("");
 		conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_DEFAULT);
 		conversationInformation.setFilledFields(SessionAttributeName.NEXT_INTENT_DEFAULT);
-		return ResponseMaker.createResponse("");
+		return ResponseMaker.createTellResponse("");
 	}
 
 	private SpeechletResponse getNoValidIntentResponse(final ConversationInformation conversationInformation) {

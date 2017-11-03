@@ -61,7 +61,7 @@ public class DefaultIntentHandler extends IntentHandler {
 		conversationInformation.setSessionArticle("");
 		conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_DEFAULT);
 		conversationInformation.setFilledFields(SessionAttributeName.NEXT_INTENT_DEFAULT);
-		return ResponseMaker.createResponse("");
+		return ResponseMaker.createTellResponse("");
 	}
 
 	private SpeechletResponse getNoValidIntentResponse(final ConversationInformation conversationInformation) {

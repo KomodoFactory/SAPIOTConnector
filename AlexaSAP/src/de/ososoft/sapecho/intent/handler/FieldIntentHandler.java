@@ -12,7 +12,7 @@ import de.ososoft.sapecho.utils.container.SessionAttributeName;
 public class FieldIntentHandler extends IntentHandler {
 	public FieldIntentHandler() {
 		intentMap.put(IntentName.AMAZON_HELP, this::getHelpResponse);
-		intentMap.put(IntentName.FIELDS, this::getQuantitiyResponse);
+		intentMap.put(IntentName.QUANTITY, this::getQuantitiyResponse);
 		intentMap.put(IntentName.DEFAULT, this::getNoValidIntentResponse);
 	}
 

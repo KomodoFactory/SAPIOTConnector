@@ -57,7 +57,7 @@ public final class ResponseMaker {
 	 * Creates a TellIntent that Informs about one thing. Session is terminated
 	 * afterwards.
 	 */
-	public static SpeechletResponse createResponse(String speechText) {
+	public static SpeechletResponse createTellResponse(String speechText) {
 		outputSpeech.setText(speechText);
 		return SpeechletResponse.newTellResponse(outputSpeech);
 	}

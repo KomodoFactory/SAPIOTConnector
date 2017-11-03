@@ -15,7 +15,7 @@ public class RepeatIntentHandler extends IntentHandler {
 	public RepeatIntentHandler() {
 		intentMap.put(IntentName.AMAZON_HELP, this::getHelpResponse);
 		intentMap.put(IntentName.REPEAT_ARTICLE, this::getRepeatArticleResponse);
-		intentMap.put(IntentName.REPEAT_ARTICLE, IntentHandler::getSAPOrderResponse);
+		intentMap.put(IntentName.CREATE_BANF, IntentHandler::getSAPOrderResponse);
 		intentMap.put(IntentName.DEFAULT, this::getNoValidIntentResponse);
 	}
 
@@ -44,7 +44,7 @@ public class RepeatIntentHandler extends IntentHandler {
 		} else if (amountOfPossibleMatches > 1) {
 			String mostlikelyArticel = MaterialInformation.getInstance().getMostLikelyMatchForMaterial(artikel);
 			conversationInformation.setSessionArticle(mostlikelyArticel);
-			conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_CLOSEST_ARTICLE);
+			conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_MATCH_ARTICLE);
 			conversationInformation.setFilledFields(SessionAttributeName.FILLED_FIELDS_DEFAULT);
 			speechText = "Es wurde mehr als ein passender Artikel gefunden. Meinten sie " + mostlikelyArticel;
 			repromptText = "Meinten sie " + mostlikelyArticel + "?";

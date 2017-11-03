@@ -40,7 +40,7 @@ public abstract class IntentHandler {
 		conversationInformation.setSessionArticle("");
 		conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_DEFAULT);
 		conversationInformation.setFilledFields(SessionAttributeName.NEXT_INTENT_DEFAULT);
-		return ResponseMaker.createResponse("");
+		return ResponseMaker.createTellResponse("");
 	}
 
 	public abstract Function<ConversationInformation, SpeechletResponse> get(String intentName);
@@ -63,7 +63,7 @@ public abstract class IntentHandler {
 		} else if (conversationInformation.getNextIntent().equals(SessionAttributeName.NEXT_INTENT_NEW_ORDER)) {
 			String mostlikelyArtikel = conversationInformation.getSessionArticle();
 			return handleSAPOrder(mostlikelyArtikel, quantity, originalArtikel);
-		} else if (conversationInformation.getNextIntent().equals(SessionAttributeName.NEXT_INTENT_CLOSEST_ARTICLE)) {
+		} else if (conversationInformation.getNextIntent().equals(SessionAttributeName.NEXT_INTENT_MATCH_ARTICLE)) {
 			String mostlikelyArtikel = conversationInformation.getSessionArticle();
 
 			speechText = "Es wurde mehr als ein passender Artikel gefunden. Meinten sie " + mostlikelyArtikel;
@@ -115,7 +115,7 @@ public abstract class IntentHandler {
 		} else if (amountOfPossibleMatches > 1) {
 			String mostlikelyArticel = MaterialInformation.getInstance().getMostLikelyMatchForMaterial(artikel);
 			conversationInformation.setSessionArticle(mostlikelyArticel);
-			conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_CLOSEST_ARTICLE);
+			conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_MATCH_ARTICLE);
 		} else {
 			conversationInformation.setSessionArticle(" der Artikel wurde nicht verstanden ");
 			conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_REPEAT);

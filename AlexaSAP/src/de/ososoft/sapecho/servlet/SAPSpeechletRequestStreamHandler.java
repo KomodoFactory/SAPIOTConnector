@@ -1,4 +1,4 @@
-package de.ososoft.sapecho.main;
+package de.ososoft.sapecho.servlet;
 
 import java.util.HashSet;
 import java.util.Set;

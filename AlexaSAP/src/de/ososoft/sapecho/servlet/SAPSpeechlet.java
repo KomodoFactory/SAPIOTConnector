@@ -1,4 +1,4 @@
-package de.ososoft.sapecho.main;
+package de.ososoft.sapecho.servlet;
 
 import com.amazon.speech.slu.Intent;
 import com.amazon.speech.speechlet.IntentRequest;
@@ -25,6 +25,7 @@ public class SAPSpeechlet implements Speechlet {
 	 */
 	@Override
 	public void onSessionStarted(final SessionStartedRequest request, final Session session) throws SpeechletException {
+		//TODO: fix das auf die richtigen attribute bitte!!!
 		session.setAttribute("Last_Intent", "Default");
 		session.setAttribute("Closest_Match", "");
 		session.setAttribute(SessionAttributeName.FILLED_FIELDS, "");
@@ -35,6 +36,7 @@ public class SAPSpeechlet implements Speechlet {
 	 */
 	@Override
 	public SpeechletResponse onLaunch(final LaunchRequest request, final Session session) throws SpeechletException {
+		//TODO: fix das auf die richtigen attribute bitte!!!
 		session.setAttribute("Last_Intent", "Default");
 		session.setAttribute("Closest_Match", "");
 		session.setAttribute(SessionAttributeName.FILLED_FIELDS, "");
@@ -49,9 +51,9 @@ public class SAPSpeechlet implements Speechlet {
 	public SpeechletResponse onIntent(final IntentRequest request, final Session session) throws SpeechletException {
 		Intent intent = request.getIntent();
 		String intentName = (intent != null) ? intent.getName() : "";
-		String lastIntent = (String) session.getAttribute(SessionAttributeName.NEXT_INTENT);
+		String state = (String) session.getAttribute(SessionAttributeName.STATE);
 
-		return IntentHandlerProvider.get(intentName, lastIntent).apply(new ConversationInformation(request, session));
+		return IntentHandlerProvider.get(intentName, state).apply(new ConversationInformation(request, session));
 	}
 
 	/**

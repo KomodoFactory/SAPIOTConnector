@@ -8,7 +8,7 @@ public final class IntentName {
 	public static final String NEGATIV_CONFIRMATION = "AMAZON.NoIntent";
 	public static final String SAP_CONNECTION_TEST = "SAPValidateIntent";
 	public static final String CREATE_BANF = "SAPOrderStartIntent";
-	public static final String FIELDS = "FillingFieldsIntent";
+	public static final String QUANTITY = "QuantityIntent";
 	public static final String REPEAT_ARTICLE = "RepeatArticleIntent";
 	public static final String DEFAULT = "Default";
 

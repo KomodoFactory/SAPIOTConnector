@@ -35,11 +35,11 @@ public class ConversationInformation {
 	}
 
 	public String getNextIntent() {
-		return (String) session.getAttribute(SessionAttributeName.NEXT_INTENT);
+		return (String) session.getAttribute(SessionAttributeName.STATE);
 	}
 
 	public void setNextIntent(String intent) {
-		session.setAttribute(SessionAttributeName.NEXT_INTENT, intent);
+		session.setAttribute(SessionAttributeName.STATE, intent);
 	}
 
 	public String getSessionArticle() {

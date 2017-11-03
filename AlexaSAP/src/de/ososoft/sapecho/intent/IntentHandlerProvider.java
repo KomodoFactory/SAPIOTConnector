@@ -20,15 +20,15 @@ public final class IntentHandlerProvider {
 
 	static {
 		INTENT_HANDLER_MAP.put(SessionAttributeName.NEXT_INTENT_DEFAULT, new DefaultIntentHandler());
-		INTENT_HANDLER_MAP.put(SessionAttributeName.NEXT_INTENT_NEW_ORDER, new NewOrderIntentHandler());
-		INTENT_HANDLER_MAP.put(SessionAttributeName.NEXT_INTENT_CLOSEST_ARTICLE, new ClosestArticleIntentHandler());
+		INTENT_HANDLER_MAP.put(SessionAttributeName.NEXT_INTENT_MATCH_ARTICLE, new ClosestArticleIntentHandler());
 		INTENT_HANDLER_MAP.put(SessionAttributeName.NEXT_INTENT_REPEAT, new RepeatIntentHandler());
 		INTENT_HANDLER_MAP.put(SessionAttributeName.NEXT_INTENT_FIELDS, new FieldIntentHandler());
+		INTENT_HANDLER_MAP.put(SessionAttributeName.NEXT_INTENT_NEW_ORDER, new NewOrderIntentHandler());
 	}
 
-	public static Function<ConversationInformation, SpeechletResponse> get(String intentName, String nextIntentName) {
-		if (INTENT_HANDLER_MAP.containsKey(nextIntentName)) {
-			return INTENT_HANDLER_MAP.get(nextIntentName).get(intentName);
+	public static Function<ConversationInformation, SpeechletResponse> get(String intentName, String state) {
+		if (INTENT_HANDLER_MAP.containsKey(state)) {
+			return INTENT_HANDLER_MAP.get(state).get(intentName);
 		}
 		return INTENT_HANDLER_MAP.get(SessionAttributeName.NEXT_INTENT_DEFAULT).get(intentName);
 	}
