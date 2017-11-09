@@ -1,0 +1,17 @@
+de\ososoft\sapecho\utils\SAPConnector.class
+de\ososoft\sapecho\intent\IntentName.class
+de\ososoft\sapecho\main\SAPSpeechlet.class
+de\ososoft\sapecho\utils\container\SessionAttributeName.class
+de\ososoft\sapecho\intent\handler\FieldIntentHandler.class
+de\ososoft\sapecho\intent\handler\DefaultIntentHandler.class
+de\ososoft\sapecho\utils\ResponseMaker.class
+de\ososoft\sapecho\utils\container\MaterialInformation.class
+de\ososoft\sapecho\intent\handler\IntentHandler.class
+de\ososoft\sapecho\main\SAPSpeechletRequestStreamHandler.class
+de\ososoft\sapecho\intent\handler\RepeatIntentHandler.class
+de\ososoft\sapecho\intent\handler\ClosestArticleIntentHandler.class
+de\ososoft\sapecho\intent\handler\NewOrderIntentHandler.class
+de\ososoft\sapecho\intent\IntentHandlerProvider.class
+de\ososoft\sapecho\utils\container\SlotName.class
+de\ososoft\sapecho\utils\container\Bestellanforderung.class
+de\ososoft\sapecho\utils\container\ConversationInformation.class

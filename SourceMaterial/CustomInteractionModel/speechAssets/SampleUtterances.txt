@@ -1,0 +1,77 @@
+AMAZON.CancelIntent Abbrechen
+AMAZON.CancelIntent Cancel
+AMAZON.HelpIntent Hilfe
+AMAZON.HelpIntent Hilf mir
+AMAZON.HelpIntent Hilf mir bitte
+AMAZON.HelpIntent Wie bestelle ich
+AMAZON.HelpIntent Was kann ich tun
+AMAZON.HelpIntent Alexa Hilfe
+AMAZON.StopIntent Stop
+AMAZON.StopIntent Alexa Stop
+AMAZON.StopIntent Halt
+AMAZON.StopIntent Aufhören
+SAPValidateIntent erreichst du s a p
+SAPValidateIntent teste die S A P verbindung
+SAPValidateIntent probiere deine verbindung aus
+SAPOrderStartIntent Bestelle bitte {Artikel}
+SAPOrderStartIntent bestelle {Artikel}
+SAPOrderStartIntent bestell {Artikel}
+SAPOrderStartIntent Hau {Artikel} raus
+SAPOrderStartIntent Hau {Artikel} rein
+SAPOrderStartIntent Hau ne bestellung für {Artikel} raus
+SAPOrderStartIntent bestell mal {Artikel}
+SAPOrderStartIntent ich möchte {Artikel}
+SAPOrderStartIntent ich will {Artikel}
+SAPOrderStartIntent ich benötige {Artikel}
+SAPOrderStartIntent Bestelle bitte {Quantity} {Artikel}
+SAPOrderStartIntent bestelle {Quantity} {Artikel}
+SAPOrderStartIntent bestell {Quantity} {Artikel}
+SAPOrderStartIntent Hau {Quantity} {Artikel} raus
+SAPOrderStartIntent Hau {Quantity} {Artikel} rein
+SAPOrderStartIntent Hau ne bestellung für {Quantity} {Artikel} raus
+SAPOrderStartIntent bestell mal {Quantity} {Artikel}
+SAPOrderStartIntent ich möchte {Quantity} {Artikel}
+SAPOrderStartIntent ich will {Quantity} {Artikel}
+SAPOrderStartIntent ich benötige {Quantity} {Artikel}
+SAPOrderStartIntent Bestelle bitte {Quantity} stück {Artikel}
+SAPOrderStartIntent bestelle {Quantity} stück {Artikel}
+SAPOrderStartIntent bestell {Quantity} stück {Artikel}
+SAPOrderStartIntent Hau {Quantity} stück {Artikel} raus
+SAPOrderStartIntent Hau {Quantity} stück {Artikel} rein
+SAPOrderStartIntent Hau ne bestellung für {Quantity} stück {Artikel} raus
+SAPOrderStartIntent bestell mal {Quantity} stück {Artikel}
+SAPOrderStartIntent ich möchte {Quantity} stück {Artikel}
+SAPOrderStartIntent ich will {Quantity} stück {Artikel}
+SAPOrderStartIntent ich benötige {Quantity} stück {Artikel}
+SAPOrderStartIntent Bestelle bitte {Artikel} {Quantity}
+SAPOrderStartIntent bestelle {Artikel} {Quantity}
+SAPOrderStartIntent bestell {Artikel} {Quantity}
+SAPOrderStartIntent Hau {Artikel} raus {Quantity}
+SAPOrderStartIntent Hau {Artikel} rein {Quantity}
+SAPOrderStartIntent Hau ne bestellung für {Artikel} raus
+SAPOrderStartIntent bestell mal {Artikel} {Quantity}
+SAPOrderStartIntent ich möchte {Artikel} {Quantity}
+SAPOrderStartIntent ich will {Artikel} {Quantity}
+SAPOrderStartIntent ich benötige {Artikel} {Quantity}
+QuantityIntent bitte bestelle {Quantity}
+QuantityIntent bitte bestelle {Quantity} einheiten
+QuantityIntent bitte bestelle {Quantity} stück
+QuantityIntent bitte bestelle {Quantity} davon
+QuantityIntent bitte bestelle {Quantity}
+QuantityIntent Ich will {Quantity} bestellen
+QuantityIntent Ich will {Quantity}
+QuantityIntent {Quantity}
+QuantityIntent bitte bestelle {Quantity} stück davon
+QuantityIntent bitte bestelle {Quantity} stück
+QuantityIntent Ich will {Quantity} stück bestellen
+QuantityIntent Ich will {Quantity} stück
+QuantityIntent {Quantity} stück
+RepeatArticleIntent ändere die Bestellung zu {Artikel}
+RepeatArticleIntent ich will {Artikel}
+RepeatArticleIntent der Artikel {Artikel}
+RepeatArticleIntent ich brauche {Artikel}
+RepeatArticleIntent ich möchte {Artikel}
+RepeatArticleIntent bestelle mir {Artikel}
+RepeatArticleIntent ich meinte {Artikel}
+RepeatArticleIntent bestelle {Artikel}
+RepeatArticleIntent {Artikel}

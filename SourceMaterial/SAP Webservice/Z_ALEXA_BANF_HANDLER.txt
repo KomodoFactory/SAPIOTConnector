@@ -1,0 +1,127 @@
+CLASS z_alexa_banf_handler DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES if_http_extension .
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+
+    METHODS handle_valid_request
+      IMPORTING request TYPE REF TO if_http_request
+                               response TYPE REF TO if_http_response.
+    METHODS json_to_bapiebanc
+      IMPORTING
+        !json TYPE string
+      RETURNING
+        value(ret_bapiebanc) TYPE bapiebanc .
+ENDCLASS.
+
+
+
+CLASS Z_ALEXA_BANF_HANDLER IMPLEMENTATION.
+
+
+* <SIGNATURE>---------------------------------------------------------------------------------------+
+* | Instance Private Method Z_ALEXA_BANF_HANDLER->HANDLE_VALID_REQUEST
+* +-------------------------------------------------------------------------------------------------+
+* | [--->] REQUEST                        TYPE REF TO IF_HTTP_REQUEST
+* | [--->] RESPONSE                       TYPE REF TO IF_HTTP_RESPONSE
+* +--------------------------------------------------------------------------------------</SIGNATURE>
+  METHOD handle_valid_request.
+
+    DATA: response_str type String,
+          ls_bapiebanc TYPE bapiebanc,
+          lt_bapiebanc TYPE STANDARD TABLE OF bapiebanc WITH DEFAULT KEY,
+          ls_bapireturn TYPE bapireturn,
+          lt_bapireturn TYPE STANDARD TABLE OF bapireturn WITH DEFAULT KEY.
+
+
+    " turn json to object
+    ls_bapiebanc = me->json_to_bapiebanc( request->get_cdata( ) ).
+
+    "create banf
+    APPEND ls_bapiebanc TO lt_bapiebanc.
+
+    CALL FUNCTION 'BAPI_REQUISITION_CREATE'
+      TABLES
+        requisition_items = lt_bapiebanc
+        return            = lt_bapireturn.
+
+    "check if banf was created correct and give response
+    READ TABLE lt_bapireturn INTO ls_bapireturn INDEX 1.
+    READ TABLE lt_bapireturn TRANSPORTING NO FIELDS WITH KEY type = 'E'.
+
+    IF sy-subrc <> 0. "success
+      response->set_status( code = 201 reason = '' ).
+    ELSE.
+      response_str = ls_bapireturn-message.
+      response->set_status( code = 400 reason = response_str ).
+    ENDIF.
+
+  ENDMETHOD.
+
+
+* <SIGNATURE>---------------------------------------------------------------------------------------+
+* | Instance Public Method Z_ALEXA_BANF_HANDLER->IF_HTTP_EXTENSION~HANDLE_REQUEST
+* +-------------------------------------------------------------------------------------------------+
+* | [--->] SERVER                         TYPE REF TO IF_HTTP_SERVER
+* +--------------------------------------------------------------------------------------</SIGNATURE>
+  METHOD if_http_extension~handle_request.
+
+    DATA: lv_http_verb TYPE string.
+
+
+    lv_http_verb = server->request->get_header_field( name = '~request_method' ).
+
+    CASE lv_http_verb.
+      WHEN 'POST'.
+        me->handle_valid_request( request = server->request response = server->response ).
+        RETURN.
+      WHEN OTHERS.
+        server->response->set_status( code = 501 reason = 'HTTP method not supported.' ).
+        RETURN.
+    ENDCASE.
+
+  ENDMETHOD.                    "if_http_extension~handle_request
+
+
+* <SIGNATURE>---------------------------------------------------------------------------------------+
+* | Instance Private Method Z_ALEXA_BANF_HANDLER->JSON_TO_BAPIEBANC
+* +-------------------------------------------------------------------------------------------------+
+* | [--->] JSON                           TYPE        STRING
+* | [<-()] RET_BAPIEBANC                  TYPE        BAPIEBANC
+* +--------------------------------------------------------------------------------------</SIGNATURE>
+  METHOD json_to_bapiebanc.
+
+    DATA: regex TYPE REF TO cl_abap_regex,
+          matcher TYPE REF TO cl_abap_matcher,
+          ls_bapiebanc TYPE bapiebanc.
+
+    " Parsing of the JSON string
+    CREATE OBJECT regex
+      EXPORTING
+        pattern = '^\{"doc_type":"(.*)","preq_item":"(.*)","quantity":"(.*)","unit":"(.*)","material":"(.*)","plant":"(.*)","deliv_date":"(.*)"\}$'.
+
+    CREATE OBJECT matcher
+      EXPORTING
+        regex = regex
+        text  = json.
+
+    IF matcher->match( ) = abap_true.
+      ls_bapiebanc-preq_item = matcher->get_submatch( 1 ).
+      ls_bapiebanc-quantity = matcher->get_submatch( 2 ).
+      ls_bapiebanc-unit = matcher->get_submatch( 3 ).
+      ls_bapiebanc-doc_type = matcher->get_submatch( 4 ).
+      ls_bapiebanc-material = matcher->get_submatch( 5 ).
+      ls_bapiebanc-plant = matcher->get_submatch( 6 ).
+      ls_bapiebanc-deliv_date = matcher->get_submatch( 7 ).
+    ENDIF.
+
+    ret_bapiebanc = ls_bapiebanc.
+
+  ENDMETHOD.                    "json_to_bapiebanc
+ENDCLASS.
