@@ -64,8 +64,3 @@ Note that you may have to setup the Alexa Speechlet simultaniously. (Needed at s
 6. Copy the Javascript File found in the "ButtonSAP" directory into your function. Make sure the function is set to Node.js.
 7. Save your function.
 8. You will now have to configure the IoT Button. Follow this guide http://docs.aws.amazon.com/iot/latest/developerguide/configure-iot.html .
-
-### Who do I talk to? ###
-
-Dominik Rose
-Dominik.Rose@ososoft.de
