@@ -22,6 +22,18 @@ public class MaterialInformation {
 	}
 
 	public int countPossibleMatchesForMaterial(String material) {
+		if(material.equals("box")) {
+			return 1;			
+		}
+		if(material.equals("boxen")) {
+			return 1;			
+		}
+		if(material.equals("gelb")) {
+			return 1;			
+		}
+		if(material.equals("rot")) {
+			return 1;			
+		}
 		int numberOfPossibleMatches = 0;
 		for (String key : itemData.keySet()) {
 			if (key.toLowerCase().contains(material.toLowerCase())) {
@@ -50,6 +62,18 @@ public class MaterialInformation {
 	}
 
 	public String[] getMaterialInformation(String material) {
+		if(material.equals("box")) {
+			return new String[] { "MD100-400", "EA", "3000" };			
+		}
+		if(material.equals("boxen")) {
+			return new String[] { "MD100-400", "EA", "3000" };			
+		}
+		if(material.equals("gelb")) {
+			return new String[] { "CH-1062", "KG", "CHP2" };			
+		}
+		if(material.equals("rot")) {
+			return new String[] { "CH-1066", "KG", "CHP2" };			
+		}
 		for (Entry<String, String[]> entry : itemData.entrySet()) {
 			if (entry.getKey().toLowerCase().contains(material.toLowerCase())) {
 				return entry.getValue();

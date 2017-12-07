@@ -46,7 +46,7 @@ public class NewOrderIntentHandler extends IntentHandler {
 
 	private SpeechletResponse getHelpResponse(final ConversationInformation conversationInformation) {
 		conversationInformation.getSessionArticle();
-		String speechText = "Wenn Sie einen weiteren Artikel anfordern wollen sagen sie bitte Ja. Wenn sie keine weiteren Anfordern erstellen wollen sagen sie bitte Nein.";
+		String speechText = "Wenn Sie einen weiteren Artikel anfordern wollen sagen sie bitte Ja. Wenn sie keinen weiteren Anfordern erstellen wollen sagen sie bitte Nein.";
 		return ResponseMaker.createAskResponse(speechText, speechText);
 	}
 
@@ -60,7 +60,7 @@ public class NewOrderIntentHandler extends IntentHandler {
 	private SpeechletResponse getNoValidIntentResponse(final ConversationInformation conversationInformation) {
 		conversationInformation.getSessionArticle();
 		String speechText = "Ich kann ihren Auftrag leider nicht verstehen. Bitte beantworten sie die Frage möchten sie eine weitere Anforderung erstellen?";
-		String repromptText = " Möchten sie eine weitere Anforderung erstellen?";
+		String repromptText = "Möchten sie eine weitere Anforderung erstellen?";
 		return ResponseMaker.createAskResponse(speechText, repromptText);
 	}
 }

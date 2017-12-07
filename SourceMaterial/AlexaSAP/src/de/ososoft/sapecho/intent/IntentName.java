@@ -11,6 +11,9 @@ public final class IntentName {
 	public static final String QUANTITY = "QuantityIntent";
 	public static final String REPEAT_ARTICLE = "RepeatArticleIntent";
 	public static final String DEFAULT = "Default";
+	
+
+	public static final String BOX_ORDER = "BoxOrderIntent";
 
 	private IntentName() {
 	}

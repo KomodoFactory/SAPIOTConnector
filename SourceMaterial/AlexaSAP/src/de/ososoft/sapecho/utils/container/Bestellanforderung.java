@@ -7,13 +7,13 @@ import java.util.Calendar;
 import com.google.gson.annotations.SerializedName;
 
 public class Bestellanforderung {
+	@SerializedName("doc_type")
+	protected String orderType;
 	@SerializedName("preq_item")
 	protected String articleNumber;
 	protected String quantity;
 	@SerializedName("unit")
 	protected String unitName;
-	@SerializedName("doc_type")
-	protected String orderType;
 	protected String material;
 	protected String plant;
 	@SerializedName("deliv_date")

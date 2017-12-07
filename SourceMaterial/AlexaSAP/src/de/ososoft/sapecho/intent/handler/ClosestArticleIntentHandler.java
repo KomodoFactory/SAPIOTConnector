@@ -17,6 +17,7 @@ public class ClosestArticleIntentHandler extends IntentHandler {
 		intentMap.put(IntentName.NEGATIV_CONFIRMATION, this::getNegativConfirmationResponse);
 		intentMap.put(IntentName.CREATE_BANF, IntentHandler::getSAPOrderResponse);
 		intentMap.put(IntentName.DEFAULT, this::getNoValidIntentResponse);
+		intentMap.put(IntentName.BOX_ORDER, this::getBoxIntentResponse);
 	}
 
 	@Override
@@ -57,4 +58,13 @@ public class ClosestArticleIntentHandler extends IntentHandler {
 		String repromptText = "Wenn Sie nicht " + closestArticel + " anfordern wollen sagen sie bitte ... Nein.";
 		return ResponseMaker.createAskResponse(speechText, repromptText);
 	}
+	
+	private SpeechletResponse getBoxIntentResponse(final ConversationInformation conversationInformation) {
+		String articel = "Box";
+		String quantity = "1";
+		conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_NEW_ORDER);
+		return IntentHandler.handleSAPOrder(articel, quantity, articel);
+	}
+	
+	
 }

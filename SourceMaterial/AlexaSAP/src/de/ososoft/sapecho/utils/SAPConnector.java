@@ -17,7 +17,7 @@ import de.ososoft.sapecho.utils.container.Bestellanforderung;
 
 public class SAPConnector {
 
-	private static final String WEBSERVICE_URL = "http:sap.exampleaddress.com:8010/sap/bc/z_alexa_banf";
+	private static final String WEBSERVICE_URL = "http://exampleurl:8000/example/path/z_alexa_banf";
 	private HttpClient client;
 
 	public SAPConnector() {

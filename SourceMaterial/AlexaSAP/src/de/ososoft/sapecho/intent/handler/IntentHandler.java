@@ -90,7 +90,7 @@ public abstract class IntentHandler {
 				speechText = "Ich habe für sie " + quantity + " " + articel + " bestellen können";
 			}
 		} catch (Exception e) {
-			return ResponseMaker.createTellResponse("Ich habe für sie keine " + quantity + " " + articel + " bestellen können",
+			return ResponseMaker.createTellResponse("Der Artikel " + articel + " ist nicht im SAP System eingespeichert.",
 					"Fehler", e.getMessage());
 		}
 		return ResponseMaker.createAskResponse(speechText, repromptText, "Article", originalArtikel);

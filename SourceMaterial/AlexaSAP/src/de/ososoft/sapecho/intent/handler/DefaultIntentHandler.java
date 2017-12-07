@@ -22,6 +22,7 @@ public class DefaultIntentHandler extends IntentHandler {
 		intentMap.put(IntentName.SAP_CONNECTION_TEST, this::getValidConnectionResponse);
 		intentMap.put(IntentName.CREATE_BANF, IntentHandler::getSAPOrderResponse);
 		intentMap.put(IntentName.DEFAULT, this::getNoValidIntentResponse);
+		intentMap.put(IntentName.BOX_ORDER, this::getBoxIntentResponse);
 	}
 
 	@Override
@@ -69,5 +70,12 @@ public class DefaultIntentHandler extends IntentHandler {
 		String speechText = "Ich kann deinen Auftrag leider nicht verstehen. Wenn Sie eine Bestellunganforderung erstellen wollen sagen sie ... Bestelle Bitte gefolgt vom Namen des Artikels oder bitten sie um Hilfe";
 		String repromptText = "Wenn Sie eine Bestellunganforderung erstellen wollen sagen sie ... Bestelle Bitte gefolgt vom Namen des Artikels";
 		return ResponseMaker.createAskResponse(speechText, repromptText);
+	}
+	
+	private SpeechletResponse getBoxIntentResponse(final ConversationInformation conversationInformation) {
+		String articel = "Box";
+		String quantity = "1";
+		conversationInformation.setNextIntent(SessionAttributeName.NEXT_INTENT_NEW_ORDER);
+		return IntentHandler.handleSAPOrder(articel, quantity, articel);
 	}
 }
